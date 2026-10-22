@@ -1,0 +1,39 @@
+# Nothing Dark — smoked glass / graphite / aluminium.
+# Inspired by official Ear (3a), Headphone (1), Headphone (1) Pro and
+# Phone (4a) Pro imagery. Neutrals are UI adaptations, not factory color codes.
+# Red interaction accent; window borders are independently neutral.
+mode = "dark"
+
+accent = "#D71921"
+hyprland_active_border = "#747474"
+hyprland_inactive_border = "#414141"
+selection = "#484848"
+selection_background = "#484848"
+selection_foreground = "#DEDEDE"
+muted = "#989898"
+
+background = "#1C1C1C"
+dark_background = "#161616"
+darker_background = "#101010"
+lighter_background = "#282828"
+
+foreground = "#C6C6C6"
+dark_foreground = "#8E8E8E"
+light_foreground = "#B2B2B2"
+bright_foreground = "#DEDEDE"
+
+red = "#D71921"
+yellow = "#BCBCBC"
+orange = "#D71921"
+green = "#A8A8A8"
+cyan = "#C6C6C6"
+blue = "#989898"
+magenta = "#B2B2B2"
+brown = "#8E8E8E"
+
+bright_red = "#D71921"
+bright_yellow = "#D0D0D0"
+bright_green = "#BCBCBC"
+bright_cyan = "#DEDEDE"
+bright_blue = "#ACACAC"
+bright_magenta = "#C6C6C6"

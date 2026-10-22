@@ -1,0 +1,10 @@
+/* Nothing red accents; preserve the GTK theme's surfaces and window borders. */
+@define-color accent_color #d71921;
+@define-color accent_bg_color #d71921;
+@define-color accent_fg_color #ffffff;
+@define-color theme_selected_bg_color #d71921;
+@define-color theme_selected_fg_color #ffffff;
+@define-color selected_bg_color #d71921;
+@define-color selected_fg_color #ffffff;
+@define-color theme_unfocused_selected_bg_color #a9282d;
+@define-color theme_unfocused_selected_fg_color #ffffff;

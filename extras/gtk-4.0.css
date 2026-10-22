@@ -1,0 +1,13 @@
+/* Exact Nothing red, alongside the desktop's native "red" accent setting. */
+@define-color accent_color #d71921;
+@define-color accent_bg_color #d71921;
+@define-color accent_fg_color #ffffff;
+@define-color theme_selected_bg_color #d71921;
+@define-color theme_selected_fg_color #ffffff;
+
+/* Recent libadwaita versions consume CSS variables rather than named colors. */
+:root {
+  --accent-color: #d71921;
+  --accent-bg-color: #d71921;
+  --accent-fg-color: #ffffff;
+}
