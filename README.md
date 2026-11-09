@@ -54,32 +54,7 @@ omarchy theme set nothing-dark
 | Notifications, authentication dialog | 94% |
 | Tooltips, lock input | 96% |
 
-The optional `hyprland.lua` is self-contained, with no local paths or external Lua module dependencies:
-
-- Blur size 6, two passes; blur for selected shell layers and bar popups.
-- Terminal opacity: 96% active / 93% inactive.
-- File manager opacity: 97% active / 95% inactive.
-- Browsers, video, and fullscreen content remain opaque. Omarchy's default app opt-outs are preserved.
-- Secure lock surfaces are not promised layer blur; the input remains nearly opaque.
-
-### Optional: enable Lua material rules after review
-
-Recent Omarchy releases **ignore Lua files in Git-installed themes** for security and generate Hyprland configuration from the palette instead. Standard installation provides the colors, grey window borders, shell translucency, and wallpaper, but does not automatically enable the custom blur or application-opacity rules.
-
-To enable the full material treatment, review `hyprland.lua` and export a trusted local copy. Only run this after reviewing the code, and use a new destination directory:
-
-```sh
-git clone https://github.com/xvvhang/omarchy-nothing-dark-theme.git
-cd omarchy-nothing-dark-theme
-# Review hyprland.lua before continuing.
-mkdir ~/.config/omarchy/themes/nothing-dark-local
-git archive HEAD | tar -x -C ~/.config/omarchy/themes/nothing-dark-local
-omarchy theme set nothing-dark-local
-hyprctl reload
-hyprctl configerrors
-```
-
-The exported directory has no `.git` metadata and is treated as your own local theme. Material rules are loaded only while that theme is selected. The Lua rules target Hyprland 0.56; check compatibility on other versions.
+Omarchy generates Hyprland configuration from `colors.toml`. This theme provides colors, grey window borders, shell translucency, and wallpaper; it does not install custom blur or application-opacity rules. Blur depends on your existing compositor settings.
 
 ## Optional: GTK red accents
 
