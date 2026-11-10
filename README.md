@@ -2,9 +2,7 @@
 
 A Nothing-inspired Omarchy theme: smoked glass, graphite frames, silver text, and restrained brand-red accents.
 
-![Nothing Dark wallpaper: OMARCHY in Ndot 57](backgrounds/0-omarchy-ndot.png)
-
-*Wallpaper preview, not a desktop screenshot. Resolution: 3840 × 2160.*
+![Nothing Dark desktop preview](preview.png)
 
 ## Design
 
@@ -43,7 +41,7 @@ omarchy theme set nothing-dark
 
 **Back up an existing theme first:** Omarchy's installer may replace `~/.config/omarchy/themes/nothing-dark/`. GTK overrides are not installed automatically.
 
-## Translucency and blur
+## Shell translucency
 
 `shell.toml` provides gently translucent surfaces. Values below are **opacity**, not transparency:
 
@@ -54,7 +52,7 @@ omarchy theme set nothing-dark
 | Notifications, authentication dialog | 94% |
 | Tooltips, lock input | 96% |
 
-Omarchy generates Hyprland configuration from `colors.toml`. This theme provides colors, grey window borders, shell translucency, and wallpaper; it does not install custom blur or application-opacity rules. Blur depends on your existing compositor settings.
+Omarchy generates application and window-border colors from `colors.toml`. The opacity values above apply to Omarchy Shell surfaces only, not application windows.
 
 ## Optional: GTK red accents
 
